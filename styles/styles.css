@@ -15,10 +15,19 @@ footer {
   color: aliceblue;
   padding-top: 0.5rem;
   border-radius: 0.5rem;
-  display: flex;
+  padding-bottom: 0.2rem;
+}
+
+.services-list {
+  justify-items: left;
 }
 .footer-content {
   padding-left: 1rem;
+  display: flex;
+}
+
+.footer-copyright {
+  text-align: center;
 }
 
 .footer-text {
