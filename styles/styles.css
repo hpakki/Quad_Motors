@@ -58,3 +58,7 @@ footer {
     transform: translateX(-100%);
   }
 }
+
+.inventory-list {
+  list-style-type: none;
+}
