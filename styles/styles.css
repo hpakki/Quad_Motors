@@ -1,8 +1,29 @@
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
+header {
+  background-color: black;
+  color: aliceblue;
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  padding-top: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+}
+.footer-content {
+  padding-left: 1rem;
+}
+
+.footer-text {
+  width: 50%;
+}
 .logo {
   width: 5rem;
   height: 5rem;
@@ -14,7 +35,8 @@ img {
   display: flex;
   overflow: hidden;
   width: 100%;
-  height: 30vh; /* Set the height of the carousel to 30% of the viewport height */
+  height: 30rem;
+  border-radius: 0.5rem;
 }
 .carousel-inner {
   display: flex;
