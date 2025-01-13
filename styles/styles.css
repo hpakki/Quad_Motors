@@ -11,7 +11,7 @@ img {
 .carousel-inner {
   display: flex;
   width: 100%;
-  animation: scroll 10s linear infinite;
+  animation: scroll 5s linear infinite;
 }
 .carousel-inner img {
   flex: 0 0 auto;
