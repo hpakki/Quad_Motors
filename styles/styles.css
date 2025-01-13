@@ -2,6 +2,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  margin-right: 1rem;
+  margin-right: 0.5rem;
+}
 .carousel {
   display: flex;
   overflow: hidden;
