@@ -5,23 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quad Motors</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <style>
+      .description-container h1,
+      .description-container h2 {
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
       <a href="index.html">
         <img src="../images/quad.png" alt="Quad Motors Logo" class="logo" />
       </a>
-      <h1>Quad Motors</h1>
-      <p>Exotic Car Sales and Service</p>
+      <div class="description-container">
+        <h1 class="description" onclick="location.href='index.html'">
+          Quad Motors
+        </h1>
+        <h2 onclick="location.href='index.html'">
+          Exotic Car Sales and Service
+        </h2>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="carousel">
-      <div class="carousel-inner">
-        <img src="../images/car6.jpg" alt="Car" />
-        <img src="../images/car7.jpg" alt="Car" />
-        <img src="../images/car2.jpg" alt="Car" />
-        <img src="../images/car1.jpg" alt="Car" />
-      </div>
+    <div class="gallery">
+      <img src="../images/car2_gallery.jpg" alt="cars" />
+      <img src="../images/car3_gallery.jpg" alt="cars" />
+      <img src="../images/car4_gallery.jpg" alt="cars" />
+      <img src="../images/car9_gallery.jpg" alt="cars" />
+      <img src="../images/car8_gallery.jpg" alt="cars" />
     </div>
 
     <footer class="footer">
