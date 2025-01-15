@@ -34,18 +34,26 @@ nav ul li:last-child {
 }
 
 video {
-  width: 85%;
-  height: auto;
-  padding: 2rem;
+  width: stretch;
+  height: 20rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .video-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50 rem;
+  width: fit-content;
   flex-direction: column;
+}
+
+.video-description {
+  justify-content: center;
+  align-items: center;
+  text-justify: inter-word;
+  text-align: center;
 }
 
 .video-description-header {
@@ -53,6 +61,21 @@ video {
 }
 .video-description-text {
   padding: 0;
+  margin-top: 0;
+  margin-right: 5rem;
+  margin-left:5rem;
+  text-justify: inter-word;
+  justify-content:center;
+}
+
+.service-cards{
+  text-align:center;
+}
+.service-card-header{
+  margin-bottom: 0;
+}
+
+.service-card-text{
   margin-top: 0;
 }
 
@@ -112,7 +135,7 @@ video {
 .gallery > img {
   grid-area: 1/1;
   width: 100%;
-  aspect-ratio: 1.5;
+  aspect-ratio: 1.8;
   object-fit: cover;
   animation: r var(--d) linear infinite;
 }
@@ -195,7 +218,6 @@ video {
 .footer {
   background-color: #333;
   color: #fff;
-
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -245,7 +267,7 @@ video {
   border-top: 1px solid #444;
   padding-top: 1rem;
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 
 .footer-search {
@@ -283,12 +305,15 @@ video {
 
 .service-header {
   display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .service-header-img {
   width: 2rem;
   height: 2rem;
-  padding: 0.6rem;
+  padding-top: 1rem;
+  padding-left: 0;
 }
 
 /* Testing styles */
@@ -358,4 +383,66 @@ video {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+/* Inventory Section */
+.inventory-header{
+  margin-bottom: 0;
+}
+
+.inventory-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.inventory-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.inventory-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+  margin-top:0;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  padding: 1rem;
+  text-align: left;
+}
+
+.container h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.container p {
+  margin: 0.5rem 0;
+  color: #666;
 }
