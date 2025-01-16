@@ -336,16 +336,25 @@ video {
 .content-main {
   text-align: left;
   display: flex;
+  flex-direction: column;
   padding: 1rem;
+}
+
+.content-main-header {
+  text-align: center;
 }
 
 .content-main-img {
   width: 15rem;
   height: 15rem;
-  float: right;
   padding: 2rem;
   transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
   border-radius: 50%;
+}
+
+.content-main-img-container {
+  display: flex;
+  justify-content: center;
 }
 
 .content-main-img:hover {
