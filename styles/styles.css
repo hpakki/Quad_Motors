@@ -45,10 +45,11 @@ body {
 .description-container {
   flex-grow: 1;
   margin-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .description-container h1 {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   color: #333;
 }
 
@@ -369,7 +370,7 @@ video {
   align-items: center;
   text-justify: inter-word;
   text-align: center;
-  max-width: 900px;
+  max-width: fit-content;
   text-align: center;
 }
 
@@ -382,8 +383,6 @@ video {
 .video-description-text {
   padding: 0;
   margin-top: 0;
-  margin-right: 5rem;
-  margin-left: 5rem;
   text-justify: inter-word;
   justify-content: center;
   font-size: 1.1rem;
@@ -401,6 +400,7 @@ video {
 
 .content-main-header {
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .content-main-img {
@@ -519,7 +519,7 @@ video {
   color: #666;
   line-height: 1.6;
   margin-bottom: 2rem;
-  max-width: 800px;
+  max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -540,6 +540,7 @@ video {
   padding: 2rem;
   padding-top: 1rem;
   justify-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -647,4 +648,72 @@ video {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+}
+
+/* Hidden Checkbox */
+.hidden-checkbox {
+  display: none;
+}
+
+/* Sliding Panel */
+.sliding-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(100%); /* Start fully out of view */
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth slide with easing */
+  z-index: 1000;
+}
+
+/* When Checkbox is Checked (Panel Slides In) */
+.hidden-checkbox:checked + .sliding-panel {
+  transform: translateY(0); /* Bring the panel into view */
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1100;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #e60000;
+}
+
+/* Toggle Button */
+.toggle-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1001;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #e60000;
+}
+.inventory-toggle {
+  text-align: center;
 }
