@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
     <title>Quad Motors Service</title>
   </head>
   <body>
     <header class="header">
       <a href="index.html">
-        <img src="../images/quad.png" alt="Quad Motors Logo" class="logo" />
+        <img
+          src="../images/quad-logo-2-removebg.png"
+          alt="Quad Motors Logo"
+          class="logo"
+        />
       </a>
-      <div class="description-container">
-        <h1 class="description">Quad Motors</h1>
-        <h2>Luxury Car Sales and Service</h2>
-      </div>
+
+      <!-- Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
       <nav class="nav">
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="about-us.html">About Us</a></li>
-          <li><a href="citations.html">Let's talk</a></li>
         </ul>
       </nav>
     </header>
@@ -75,6 +89,48 @@
         <p class="service-card-text">
           Our engine tune-up service includes inspection, cleaning, and
           adjustment of key components to improve performance.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-header">Transmission</h3>
+        <p class="service-card-text">
+          Our transmission overhaul service ensures smooth shifting and extends
+          the life of your vehicle's transmission.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-header">Paint Correction</h3>
+        <p class="service-card-text">
+          Our paint correction service removes imperfections and restores the
+          original shine of your vehicle's paint.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-header">Rust Protection</h3>
+        <p class="service-card-text">
+          Our rust protection service helps prevent corrosion and extends the
+          life of your vehicle.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-header">Interior</h3>
+        <p class="service-card-text">
+          Our interior detailing service cleans and restores the interior of
+          your vehicle, leaving it looking and smelling like new.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-header">Suspension</h3>
+        <p class="service-card-text">
+          Our suspension tuning service optimizes your vehicle's handling and
+          ride quality for a smoother driving experience.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3 class="service-card-header">Air-Con</h3>
+        <p class="service-card-text">
+          Our air conditioning service ensures your vehicle's climate control
+          system is working efficiently for your comfort.
         </p>
       </div>
     </div>

@@ -4,22 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quad Motors</title>
-    <link rel="stylesheet" href="../styles/test.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
     <header class="header">
       <a href="index.html">
-        <img src="../images/quad.png" alt="Quad Motors Logo" class="logo" />
+        <img src="../images/quad-logo-2-removebg.png" alt="Quad Motors Logo" class="logo" />
       </a>
-      <div class="description-container">
-        <h1 class="description">Quad Motors</h1>
-        <h2>Luxury Car Sales and Service</h2>
-      </div>
+
+      <!-- Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
       <nav class="nav">
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="about-us.html">About Us</a></li>
-          <li><a href="citations.html">Let's talk</a></li>
         </ul>
       </nav>
     </header>
@@ -36,20 +46,30 @@
       <div>
         <h3 class="content-main-header">Welcome to Quad Motors!!!</h3>
         <p class="content-main-text">
-          Welcome to Quad Motors, established in 1988 as the place to find
-          quality used vehicles in the Quad City area. Quadyster purchased the
-          dealership in 2008, with Harsh at the helm. This family-owned business
-          is an alternative source for luxury cars, trucks, vans, and SUVs, and
-          serves Quad Cities, Davenport, Moline, Rock Island, and surrounding
-          communities. Quad Motors practices the same level of commitment as
-          Quadyster with customer satisfaction always in mind. This established
-          dealership stocks many makes such as Ferrari, Lamborgini, and AMG and
-          strives to give fair prices on all vehicles. Please make sure you see
-          Emily Johnson for all of your car needs at Quad Motors. You can feel
-          free to email, call, or simply stop in. Have a great day.
+          Established in 2014 as the place to find quality used vehicles in the
+          Quad City area. With Harsha Pakki
+          at the helm, this family-owned business is an alternative source for
+          luxury cars, trucks, vans, and SUVs, and serves Quad Cities,
+          Davenport, Moline, Rock Island, and surrounding communities. Quad
+          Motors practices the same level of commitment as Quadyster with
+          customer satisfaction always in mind. This established dealership
+          stocks many makes such as Ferrari, Lamborgini, and AMG and strives to
+          give fair prices on all vehicles. Please make sure you see Emily
+          Johnson for all of your car needs at Quad Motors. You can feel free to
+          email, call, or simply stop in. Have a great day.
         </p>
       </div>
+
       <div class="content-main-img-container">
+        <div class="staff-picks">
+          <h2 class="staff-picks-header">The Best Deserve Only The Best</h2>
+          <p class="staff-picks-text">
+            Don't miss out on our carefully crafted picks absolutely just for
+            you. Each selection is made keeping your tastes and stature in mind.
+            <br> Contact us now to secure your dream car.
+          <p>
+        </div>
+        <div class=content-main-img-inner-container>
         <img
           class="content-main-img"
           src="../images/car6.jpg"
@@ -65,182 +85,189 @@
           src="../images/ferrari_488.jpg"
           alt="car-of-the-month"
         />
-      </div>
-      <div class="inventory-toggle">
-        <label for="toggle-panel" class="toggle-button"
-          >Click to View Inventory</label
-        >
+        <div>
       </div>
     </div>
-    
 
-    
-<!-- Sliding Panel for Inventory -->
-<input type="checkbox" id="toggle-panel" class="hidden-checkbox" />
-<div id="inventory-panel" class="sliding-panel">
-  <!-- Close Button -->
-  <label for="toggle-panel" class="close-button">Close</label>
-  <main class="inventory-section">
-    <h2 class="inventory-header">Our Inventory</h2>
-    <div class="search-and-filter">
-      <input
-        type="text"
-        class="search-bar"
-        placeholder="Search inventory..."
-      />
-      <div class="price-filter">
-        <label for="price-range">Price Range: </label>
-        <input
-          type="range"
-          id="price-range"
-          class="slider"
-          min="0"
-          max="100000"
-          step="1000"
-        />
-        <span id="price-value">$500,000</span>
+    <div class="inventory-toggle">
+      <h2 class="inventory-toggle-header">Start Your Journey Now</h2>
+      <h3 class="inventory-toggle-text">
+        Embark on your automative journey now. Explore our premium selection,
+        experience VIP treatment and enjoy swift, secure delivery. <br />
+        Your ride awaits.
+      </h3>
+      <div class="toggle-button-container">
+        <label for="toggle-panel" class="toggle-button">Find Your Brand</label>
       </div>
     </div>
-    <div class="inventory-cards">
-      <div class="card">
-        <img src="../images/car6.jpg" alt="Luxury Sedan" class="card-img" />
-        <div class="container">
-          <h4><b>Lamborghini Hurracan</b></h4>
-          <p>$300,000</p>
-          <p>2025 Model - Automatic</p>
+    <!-- Sliding Panel for Inventory -->
+    <input type="checkbox" id="toggle-panel" class="hidden-checkbox" />
+    <div id="inventory-panel" class="sliding-panel">
+      <!-- Close Button -->
+      <label for="toggle-panel" class="close-button">Close</label>
+      <main class="inventory-section">
+        <h2 class="inventory-header">Find Your Exclusive Brand</h2>
+        <p class="inventory-text">
+          Uncover your exclusive automotive brand today, where quality meets
+          luxury, satisfaction knows no bounds, <br />
+          and every journey becomes an unforgettable experience.
+        </p>
+        <div class="search-and-filter">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search inventory..."
+          />
+          <div class="price-filter">
+            <label for="price-range">Price Range: </label>
+            <input
+              type="range"
+              id="price-range"
+              class="slider"
+              min="0"
+              max="100000"
+              step="1000"
+            />
+            <span id="price-value">$500,000</span>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/ferrari_488.jpg"
-          alt="Sports Coupe"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Ferrari 488 GT</b></h4>
-          <p>$350,000</p>
-          <p>2025 Model - Automatic</p>
-        </div>
-      </div>
+        <div class="inventory-cards">
+          <div class="card">
+            <img src="../images/car6.jpg" alt="Luxury Sedan" class="card-img" />
+            <div class="container">
+              <h4><b>Lamborghini Hurracan</b></h4>
+              <p>$300,000</p>
+              <p>2025 Model - Automatic</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/ferrari_488.jpg"
+              alt="Sports Coupe"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Ferrari 488 GT</b></h4>
+              <p>$350,000</p>
+              <p>2025 Model - Automatic</p>
+            </div>
+          </div>
 
-      <div class="card">
-        <img
-          src="../images/Mercedes_SLS_AMG.jpg"
-          alt="Luxury Coupe"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Mercedes Benz GT AMG</b></h4>
-          <p>$100,000</p>
-          <p>2025 Model - Automatic</p>
+          <div class="card">
+            <img
+              src="../images/Mercedes_SLS_AMG.jpg"
+              alt="Luxury Coupe"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Mercedes Benz GT AMG</b></h4>
+              <p>$100,000</p>
+              <p>2025 Model - Automatic</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/Bugatti_Chiron.jpg"
+              alt="Bugatti"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Bugatti Chiron</b></h4>
+              <p>$1,500,000</p>
+              <p>2024 Model - Automatic</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../images/car7.jpg" alt="Convertible" class="card-img" />
+            <div class="container">
+              <h4><b>Lamborghini Gallardo</b></h4>
+              <p>$120,000</p>
+              <p>2008 Model - Automatic</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/ford_mustang.jpg"
+              alt="Luxury Sedan"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Ford Mustang</b></h4>
+              <p>$80,000</p>
+              <p>1972 Model - Manual</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/dodge_challenger.jpg"
+              alt="Luxury Sedan"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Dodge Challenger</b></h4>
+              <p>$55,000</p>
+              <p>2023 Model - Automatic</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../images/car10.jpg" alt="Sports Car" class="card-img" />
+            <div class="container">
+              <h4><b>Porshe Carrera Convertible</b></h4>
+              <p>$180,000</p>
+              <p>2023 Model - Manual</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/challenger_vintage.jpg"
+              alt="Luxury Sedan"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Dodge Challenger</b></h4>
+              <p>$90,000</p>
+              <p>1970 Model - Automatic</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/pagani_huvera.jpg"
+              alt="Super Car"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Pagani Huayra</b></h4>
+              <p>$1,000,000</p>
+              <p>2023 Model - Automatic</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/Miata_NC.jpg"
+              alt="Sports Coupe"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Mazda Miata NC</b></h4>
+              <p>$15,000</p>
+              <p>2012 Model - Manual</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../images/AstonMartin_DB9.jpg"
+              alt="Sports Coupe"
+              class="card-img"
+            />
+            <div class="container">
+              <h4><b>Aston Martin DB9</b></h4>
+              <p>$120,000</p>
+              <p>2022 Model - Automatic</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/Bugatti_Chiron.jpg"
-          alt="Bugatti"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Bugatti Chiron</b></h4>
-          <p>$1,500,000</p>
-          <p>2024 Model - Automatic</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../images/car7.jpg" alt="Convertible" class="card-img" />
-        <div class="container">
-          <h4><b>Lamborghini Gallardo</b></h4>
-          <p>$120,000</p>
-          <p>2008 Model - Automatic</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/ford_mustang.jpg"
-          alt="Luxury Sedan"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Ford Mustang</b></h4>
-          <p>$80,000</p>
-          <p>1972 Model - Manual</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/dodge_challenger.jpg"
-          alt="Luxury Sedan"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Dodge Challenger</b></h4>
-          <p>$55,000</p>
-          <p>2023 Model - Automatic</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../images/car10.jpg" alt="Sports Car" class="card-img" />
-        <div class="container">
-          <h4><b>Porshe Carrera Convertible</b></h4>
-          <p>$180,000</p>
-          <p>2023 Model - Manual</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/challenger_vintage.jpg"
-          alt="Luxury Sedan"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Dodge Challenger</b></h4>
-          <p>$90,000</p>
-          <p>1970 Model - Automatic</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/pagani_huvera.jpg"
-          alt="Super Car"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Pagani Huayra</b></h4>
-          <p>$1,000,000</p>
-          <p>2023 Model - Automatic</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/Miata_NC.jpg"
-          alt="Sports Coupe"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Mazda Miata NC</b></h4>
-          <p>$15,000</p>
-          <p>2012 Model - Manual</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="../images/AstonMartin_DB9.jpg"
-          alt="Sports Coupe"
-          class="card-img"
-        />
-        <div class="container">
-          <h4><b>Aston Martin DB9</b></h4>
-          <p>$120,000</p>
-          <p>2022 Model - Automatic</p>
-        </div>
-      </div>
+      </main>
     </div>
-    </div>
-  </main>
-</div>
-
-    
 
     <footer class="footer">
       <div class="footer-flex">
