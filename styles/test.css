@@ -104,7 +104,7 @@ pre {
 }
 
 .nav ul li a:hover {
-  background-color: #007bff;
+  background-color: #e60000;
   color: #fff;
   border-radius: 5px;
 }
@@ -415,7 +415,8 @@ video {
   display: flex;
   flex-direction: column;
   padding: 0;
-  color: #666;
+  color: #fff;
+  background-color: #333;
 }
 
 .content-main-header {
@@ -437,7 +438,8 @@ video {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #666;
+  background: url(../images/grey-bg.jpg);
+  background-size: cover;
 }
 
 .content-main-img:hover {
@@ -725,7 +727,7 @@ video {
 /* Toggle Button */
 .toggle-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #e60000;
   color: white;
   border: none;
   cursor: pointer;
@@ -740,12 +742,12 @@ video {
 }
 
 .staff-picks-header {
-  color: #000;
+  color: #fff;
   margin-top: 1rem;
 }
 
 .staff-picks-text {
-  color: #000;
+  color: #fff;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
@@ -796,11 +798,6 @@ video {
 
 .nav ul li {
   margin: 0;
-}
-
-.nav ul li a:hover {
-  background-color: #007bff;
-  color: white;
 }
 
 /* Hamburger Menu */
@@ -857,4 +854,23 @@ video {
     display: flex; /* Always visible as a row */
     flex-direction: row;
   }
+}
+
+.test-drive-button,
+.contact-us-button {
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.test-drive-button {
+  background-color: red;
+  color: white;
+  border: solid red;
+}
+
+.contact-us-button {
+  background: transparent;
+  color: white;
+  border: solid white;
 }
