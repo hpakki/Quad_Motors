@@ -175,11 +175,11 @@ pre {
 .inventory-section {
   padding: 2rem;
   text-align: center;
+  background: #333;
 }
 
 .inventory-section h2 {
   font-size: 2rem;
-  color: #333;
   margin-bottom: 0;
 }
 
@@ -783,6 +783,10 @@ video {
 .inventory-toggle-text {
   margin-left: 8rem;
   margin-right: 8rem;
+}
+
+.inventory-header {
+  color: #fff;
 }
 
 .inventory-text {
